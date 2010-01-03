@@ -148,7 +148,7 @@ End Type
 Rem
 	bbdoc:
 End Rem
-Type TWaitProcess Extends TProc
+Type TWaitProc Extends TProc
 	Field start:Int
 	Field stop:Int
 

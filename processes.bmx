@@ -157,6 +157,8 @@ Type TWaitProcess Extends TProc
 	End Rem
 	Method New()
 		Self.typeId = PROC_WAIT
+		Self.start = 0
+		Self.stop = 0
 	End Method
 
 	Rem
@@ -164,13 +166,6 @@ Type TWaitProcess Extends TProc
 	End Rem	
 	Method SetWait(time:Int)
 		Self.stop = time
-	End Method
-
-	Rem
-		bbdoc:
-	End Rem	
-	Method OnInitialze()
-		Self.start = 0
 	End Method
 
 	Rem

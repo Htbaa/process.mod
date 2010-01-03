@@ -1,0 +1,8 @@
+<h1>Origin</h1>
+<p>BlitzMax translation of Mike McShaffrys' C++ processes implementation described in the book <a href="http://code.google.com/p/gamecode3/">Game Coding Complete, 3rd</a>.</p>
+
+<h2>Examples</h2>
+<p>Please take a look at one of the examples below.</p>
+<ul>
+	<li><a href="../examples/example1.bmx">example1.bmx</a></li>
+</ul>

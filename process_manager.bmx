@@ -1,18 +1,18 @@
 Rem
-	bbdoc:
+	bbdoc: Process manager
 End Rem
 Type TProcessManager
 	Field processList:TList
 	
 	Rem
-		bbdoc:
+		bbdoc: Constructor
 	End Rem
 	Method New()
 		Self.processList = New TList
 	End Method
 
 	Rem
-		bbdoc: run through the list of processes and detach them
+		bbdoc: Run through the list of processes and detach them
 	End Rem
 	Method Destroy()
 		For Local process:TProc = EachIn Self.processList
@@ -22,7 +22,7 @@ Type TProcessManager
 	End Method
 	
 	Rem
-		bbdoc: run through the list of processes and update them
+		bbdoc: Run through the list of processes and update them
 	End Rem
 	Method UpdateProcesses(deltaTicks:Double)
 		For Local process:TProc = EachIn Self.processList
@@ -54,7 +54,8 @@ Type TProcessManager
 	End Method
 	
 	Rem
-		bbdoc: gets a process to run
+		bbdoc: Gets a process to run
+		about: Attaches a process to the process manager so it gets executed
 	End Rem
 	Method Attach(process:TProc)
 		Self.processList.AddLast(process)
